@@ -1,9 +1,9 @@
 import React from 'react';
-import AppContainer from '../../components/AppContainer/AppContainer';
-import AppFooter from '../../components/AppFooter/AppFooter';
-import AppForm from '../../components/AppForm/AppForm';
-import AppHeader from '../../components/AppHeader/AppHeader';
-import { useAuthentificate } from '../../features/user/UserSlice';
+import AppContainer from 'components/AppContainer/AppContainer';
+import AppFooter from 'components/AppFooter/AppFooter';
+import AppForm from 'components/AppForm/AppForm';
+import AppHeader from 'components/AppHeader/AppHeader';
+import { useAuthentificate } from 'features/user/UserSlice';
 import './Login.css';
 
 interface Props {}

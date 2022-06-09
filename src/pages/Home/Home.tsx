@@ -1,9 +1,9 @@
 import React from 'react';
-import AppBanner from '../../components/AppBanner/AppBanner';
-import AppContainer from '../../components/AppContainer/AppContainer';
-import AppFeature from '../../components/AppFeature/AppFeature';
-import AppFooter from '../../components/AppFooter/AppFooter';
-import AppHeader from '../../components/AppHeader/AppHeader';
+import AppBanner from 'components/AppBanner/AppBanner';
+import AppContainer from 'components/AppContainer/AppContainer';
+import AppFeature from 'components/AppFeature/AppFeature';
+import AppFooter from 'components/AppFooter/AppFooter';
+import AppHeader from 'components/AppHeader/AppHeader';
 import './Home.css';
 
 interface Props {}

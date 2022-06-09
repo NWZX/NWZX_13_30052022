@@ -1,6 +1,6 @@
 import React from 'react';
 import { Navigate } from 'react-router-dom';
-import { useAuthentificate } from '../../features/user/UserSlice';
+import { useAuthentificate } from 'features/user/UserSlice';
 
 interface Props {
     children: React.ReactNode;

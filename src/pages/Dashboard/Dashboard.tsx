@@ -1,12 +1,12 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
-import AppAccount from '../../components/AppAccount/AppAccount';
-import AppAccountOwner from '../../components/AppAccountOwner/AppAccountOwner';
-import AppContainer from '../../components/AppContainer/AppContainer';
-import AppFooter from '../../components/AppFooter/AppFooter';
-import AppHeader from '../../components/AppHeader/AppHeader';
+import AppAccount from 'components/AppAccount/AppAccount';
+import AppAccountOwner from 'components/AppAccountOwner/AppAccountOwner';
+import AppContainer from 'components/AppContainer/AppContainer';
+import AppFooter from 'components/AppFooter/AppFooter';
+import AppHeader from 'components/AppHeader/AppHeader';
 import './Dashboard.css';
-import { useProfile } from '../../features/user/UserSlice';
+import { useProfile } from 'features/user/UserSlice';
 
 interface Props {}
 

@@ -1,6 +1,6 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
-import { useAuthentificate, useProfile } from '../../features/user/UserSlice';
+import { useAuthentificate, useProfile } from 'features/user/UserSlice';
 import './AppHeader.css';
 
 interface Props {

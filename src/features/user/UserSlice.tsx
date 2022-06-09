@@ -1,8 +1,8 @@
 import { createAsyncThunk, createSlice } from '@reduxjs/toolkit';
 import { useEffect, useState } from 'react';
-import { useAppDispatch, useAppSelector } from '../../app/hooks';
-import { fetchToken, fetchUser, updateUser } from '../../app/services';
-import { IUser } from '../../interfaces/IUser';
+import { useAppDispatch, useAppSelector } from 'app/hooks';
+import { fetchToken, fetchUser, updateUser } from 'data/servicesAPIProvider';
+import { IUser } from 'interfaces/IUser';
 
 export interface UserState {
     user: IUser | undefined;

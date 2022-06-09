@@ -1,4 +1,4 @@
-import { IUser } from '../interfaces/IUser';
+import { IUser } from 'interfaces/IUser';
 
 const loginPath = process.env.REACT_APP_APIROUTE ? process.env.REACT_APP_APIROUTE + '/user/login' : '';
 const profilePath = process.env.REACT_APP_APIROUTE ? process.env.REACT_APP_APIROUTE + '/user/profile' : '';

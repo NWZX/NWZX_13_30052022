@@ -1,11 +1,11 @@
 import React, { useState } from 'react';
-import AppAccount from '../../components/AppAccount/AppAccount';
-import AppContainer from '../../components/AppContainer/AppContainer';
-import AppFooter from '../../components/AppFooter/AppFooter';
-import AppHeader from '../../components/AppHeader/AppHeader';
-import CustomCollapsable from '../../components/CustomCollapsable/CustomCollapsable';
+import AppAccount from 'components/AppAccount/AppAccount';
+import AppContainer from 'components/AppContainer/AppContainer';
+import AppFooter from 'components/AppFooter/AppFooter';
+import AppHeader from 'components/AppHeader/AppHeader';
+import CustomCollapsable from 'components/CustomCollapsable/CustomCollapsable';
 import './DashboardTransaction.css';
-import { transactionFake } from '../../data/fakeData';
+import { transactionFake } from 'data/fakeData';
 
 interface Props {}
 
