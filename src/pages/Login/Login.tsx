@@ -9,7 +9,7 @@ import './Login.css';
 interface Props {}
 
 const Login: React.FC<Props> = () => {
-    const { Login } = useAuthentificate();
+    const { Login, Status } = useAuthentificate();
     return (
         <div id="login">
             <AppHeader title="Argent Bank" logoSrc="./img/argentBankLogo.png" logoAlt="Argent Bank Logo" logoHref="/" />
@@ -43,6 +43,7 @@ const Login: React.FC<Props> = () => {
                             type="checkbox"
                             label="Remember me"
                         />
+                        {Status === 'error' ? <p className="sign-in-error">Login or password invalid !</p> : null}
                         <button className="sign-in-button">Sign In</button>
                     </AppForm.Form>
                 </section>

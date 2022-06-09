@@ -7,7 +7,7 @@ import { IUser } from 'interfaces/IUser';
 export interface UserState {
     user: IUser | undefined;
     token: string | undefined;
-    status: 'auth' | 'loading' | 'guest';
+    status: 'auth' | 'loading' | 'guest' | 'error';
 }
 
 const initialToken =
@@ -69,7 +69,7 @@ export const userSlice = createSlice({
                 }
             })
             .addCase(LoginAsync.rejected, (state) => {
-                state.status = 'guest';
+                state.status = 'error';
             })
             //Get
             .addCase(GetUserAsync.fulfilled, (state, action) => {
@@ -119,6 +119,7 @@ export const useProfile = () => {
 // eslint-disable-next-line @typescript-eslint/explicit-function-return-type
 export const useAuthentificate = () => {
     const Token = useAppSelector((state) => state.user.token);
+    const Status = useAppSelector((state) => state.user.status);
     const isAuthenticated = useAppSelector((state) => state.user.status === 'auth');
 
     const dispatch = useAppDispatch();
@@ -133,6 +134,7 @@ export const useAuthentificate = () => {
 
     return {
         Token,
+        Status,
         isAuthenticated,
         Logout,
         Login,
