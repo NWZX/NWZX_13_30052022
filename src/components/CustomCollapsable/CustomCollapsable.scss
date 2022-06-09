@@ -1,0 +1,65 @@
+.collapsable {
+    width: 100%;
+
+    & .collapsable_item {
+        border-top-width: 1px;
+        border-color: inherit;
+        overflow-anchor: none;
+
+        & .collapsable_button {
+            display: flex;
+            align-items: center;
+            width: 100%;
+            outline: 1px solid gray;
+            border: 0;
+            transition-property: background-color,
+                border-color,
+                color,
+                fill,
+                stroke,
+                opacity,
+                box-shadow,
+                transform;
+            transition-duration: 200ms;
+            font-size: 1rem;
+            padding-inline-start: 1rem;
+            padding-inline-end: 1rem;
+            padding-top: 0.5rem;
+            padding-bottom: 0.5rem;
+
+            background-color: white;
+            // color: darkgray;
+
+            & .collapsable_button_icon {
+                width: 32px;
+                height: 32px;
+                display: inline-block;
+                line-height: 1em;
+                -webkit-flex-shrink: 0;
+                -ms-flex-negative: 0;
+                flex-shrink: 0;
+                color: currentColor;
+                opacity: 1;
+                -webkit-transition: -webkit-transform 0.2s;
+                transition: transform 0.2s;
+                transform-origin: center;
+                font-size: 1.25em;
+                vertical-align: middle;
+            }
+        }
+        & .collapsable_panel {
+            overflow: hidden;
+            opacity: 0;
+            height: 0px;
+            transition: opacity 0.4s, height 0.4s ease-out;
+            outline: 1px solid gray;
+            border: 0;
+            
+            & .collapsable_panel_centent {
+                padding: 16px;
+                padding-top: 8px;
+                background-color: #f7f7f7;
+            }
+        }
+    }
+}
